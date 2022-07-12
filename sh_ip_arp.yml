@@ -5,8 +5,8 @@
   
   tasks: 
     - name: show ip
-    ios_command:
-      commands: show ip int br
+      ios_command:
+        commands: show ip int br
       register: output
 
     - debug: var=output.stdout_lines
