@@ -1,8 +1,11 @@
 ---
-- name: Cau hinh Switch
+- name: 'Cau hinh Switch'
   hosts: all
   gather_facts: no
   task: 
     - name: show ip
     ios_command:
       comand: show ip int br
+      register: output
+
+    -debug: var=output.stdout_lines
