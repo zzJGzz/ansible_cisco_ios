@@ -8,4 +8,4 @@
       comand: show ip int br
       register: output
 
-    -debug: var=output.stdout_lines
+    - debug: var=output.stdout_lines
