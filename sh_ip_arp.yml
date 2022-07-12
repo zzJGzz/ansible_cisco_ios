@@ -4,6 +4,12 @@
   gather_facts: no
   
   tasks: 
+    - name: Tao Loopback
+      ios_interface:
+        name: Loopback100
+        state: up
+
+  
     - name: show ip
       ios_command:
         commands: show ip int br
