@@ -5,7 +5,7 @@
   
   task: 
     - name: show ip
-    cisco.ios.ios_command:
+    - cisco.ios.ios_command:
       commands: show ip int br
       register: output
 
